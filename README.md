@@ -43,7 +43,7 @@ CUDA_VISIBLE_DEVICES=1 python compact_run_prompt_xRAG_reader_exploratory_embeddi
 
 ## Acknowledgements
 
-This codebase is inspired by the [CompAct EMNLP 2024](https://github.com/dmis-lab/CompAct) and [NeurIPS 2024 xRAG](https://github.com/Hannibal046/xRAG).
+This codebase is inspired by the [CompAct EMNLP 2024](https://github.com/dmis-lab/CompAct) and [xRAG NeurIPS 2024](https://github.com/Hannibal046/xRAG).
 .
 We thank the authors for making their code publicly available, which helped us design and implement several components of SPS and xCompress.
 
