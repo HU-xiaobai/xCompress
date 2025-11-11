@@ -29,11 +29,11 @@ Please pay attention that in our experiments we use an A100 80G GPU, and you mig
 
 Text-to-text pattern (CompAct):
 ```bash
-
+CUDA_VISIBLE_DEVICES=1 python run_prompt_norm_filtering.py --task HotpotQA --data_path /xxx/xxx(your data path) --fshot --fshot_path /xxx/xxx(your fshot data path) --compress_output_dir /xxx/xxx(your compress output path) --read_output_dir /xxx/xxx(your reader output path) --compressor_name_or_path cwyoon99/CompAct-7b --model_name_or_path meta-llama/Llama-3.1-8B-Instruct --cache_dir /xxx/xxx(your cache path) --batch_decoding --batch_size 10 --read_wo_prev_eval --segment_size 5 --max_iteration 6
 ```
 You can try to change the value of the "TOP_PCT" parameter in the run_prompt_norm_filtering.py document to balance the cost and effectiveness. If you would like to move the filtering part and test all the query, you could try the run_prompt_all.py document, and an example is below:
 ```bash
-
+CUDA_VISIBLE_DEVICES=3 python run_prompt_all.py --task HotpotQA --data_path /xxx/xxx(your data path) --fshot --fshot_path /xxx/xxx(your fshot data path) --compress_output_dir /xxx/xxx(your compress output path) --read_output_dir /xxx/xxx(your reader output path) --compressor_name_or_path cwyoon99/CompAct-7b --model_name_or_path meta-llama/Llama-3.1-8B-Instruct --cache_dir /xxx/xxx(your cache path) --batch_decoding --batch_size 10 --read_wo_prev_eval --segment_size 5 --max_iteration 6
 ```
 
 Text-to-embedding pattern (xRAG):
