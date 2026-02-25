@@ -1,4 +1,4 @@
-# Code-of-Beyond-Perplexity-Let-the-Reader-Select-Retrieval-Summaries-via-Spectrum-Projection-Score
+# xCompress
 
 Paper Previous Name: Spectrum Projection Score: Aligning Retrieved Summaries with Reader Models in Retrieval-Augmented Generation
 
